@@ -28,21 +28,6 @@ const Home = () => {
     // console.log(currentTrip);
   };
 
-  const handleAddTrip = () => {
-    let tempArray = [...pushArray];
-    tempArray[day - 1] = {
-      day: day,
-      date: date,
-      location: [...currentTrip],
-    };
-
-    setPushArray([...tempArray]);
-
-    setCurrentTrip([]);
-    document.getElementById("tripInput").value = "";
-    // console.log(pushArray);
-  };
-
   const pushToDB = async () => {
     const requestOptions = {
       method: "POST",
@@ -229,6 +214,7 @@ const Home = () => {
                       <span>Maplink: </span>
                       <a
                         target="_blank"
+                        rel="noreferrer"
                         href={ct.maplink}
                         className="text-secondary"
                       >
