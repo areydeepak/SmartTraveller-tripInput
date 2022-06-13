@@ -5,19 +5,6 @@ import React, { useState } from "react";
 const Home = () => {
   // const { trip } = useSelector((state) => state.tripReducer);
   // const dispatch = useDispatch();
-
-  const [pushArray, setPushArray] = useState([
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-  ]);
   const [currentTrip, setCurrentTrip] = useState([]);
   const [day, setDay] = useState(1);
   const [date, setDate] = useState("");
