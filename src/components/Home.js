@@ -175,7 +175,7 @@ const Home = () => {
                         src={ct.image}
                         className="text-secondary"
                         style={{ width: "50%" }}
-                        alt="Photo not Load"
+                        alt="not Load"
                       />
                     </div>
                     <div>
